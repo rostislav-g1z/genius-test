@@ -42,6 +42,7 @@
   box-sizing: border-box;
 }
 body {
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -123,7 +124,7 @@ ul {
 
 /* header */
 .header {
-  background-color: gray;
+  background-color: grey;
 }
 
 .header-container {
@@ -149,6 +150,10 @@ ul {
 /* hero-section */
 .hero-section {
   padding: 272px 0;
+  background-image: url("/images/couple_in_caffe.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -187,7 +192,11 @@ ul {
   line-height: 1.3;
 }
 
-.section-title {
+.section-title.centered {
+  text-align: center;
+}
+
+.section-title .accent {
   color: var(--color-primary-dark);
 }
 
@@ -230,13 +239,28 @@ ul {
 
 /* "cookers-section" */
 .cookers-title {
-  margin-bottom: 80px;
+  max-width: 520px;
+  margin: 0 auto 80px;
+}
+
+.cookers-title::after,
+.cookers-title::before {
+  display: block;
+  width: 352px;
+  border: 2px solid rgba(207, 207, 188, 1);
+  content: "";
 }
 
 .cooker-title {
   margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 1px rgba(161, 130, 104, 1);
 }
 
 /* formats-section */
@@ -252,8 +276,15 @@ ul {
 
 .format-card {
   padding: 24px;
-  border: 1px solid grey;
+  background: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+  border: 1px solid grey; /* remove */
   border-radius: 16px;
+  height: 444px;
 }
 
 .formats-title {
@@ -270,17 +301,53 @@ ul {
   font-weight: 300;
 }
 
+/* Carouserl */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  padding: 0;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* contact-section */
 .contact-title {
   margin-bottom: 16px;
 }
 
 /* footer */
+.footer {
+  background-color: var(--color-primary-dark);
+  background-image: url("/images/footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .addres-link {
   color: var(--color-primary-light);
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand);
 }
 
 .addres-link:hover {

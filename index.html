@@ -13,7 +13,7 @@
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
-            <a href="./index.html">
+            <a href="/">
               <img src="./images/logo.svg" alt="логотип сучасної пекарні" />
             </a>
             <ul class="header-menu">
@@ -72,12 +72,13 @@
       </section>
       <section class="section" id="cookers-section">
         <div class="container">
-          <h2 class="cookers-title section-title">
+          <h2 class="cookers-title section-title centered">
             Наші найкращі <span class="cooks">шеф-кухарі</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img class="chef-photo" src="/images/Nastya.jpg" alt="Nastya" />
                 <h3 class="cooker-title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
@@ -86,6 +87,7 @@
             </li>
             <li>
               <article>
+                <img class="chef-photo" src="/images/Vlad.jpg" alt="Vlad" />
                 <h3 class="cooker-title">Влад</h3>
                 <p class="">Привіт, я Влад!</p>
                 <p>
@@ -100,7 +102,12 @@
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Формати</h2>
+          <h2 class="formats-title section-title centered">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="/images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
           <ul class="formats-list">
             <li class="formats-item">
               <article class="format-card">
@@ -122,7 +129,10 @@
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
                   <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                  <p>
+                    Штат: 2 продавці-касири, 2 пекарі, 1 <br />
+                    помічник пекаря
+                  </p>
                   <p>Посадкові місця: відсутні</p>
                 </div>
               </article>
@@ -133,12 +143,20 @@
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
                   <p>Меню: найпопулярніші позиції меню</p>
-                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                  <p>
+                    Штат: 1 продавець, 1 пекар, 1 помічник <br />
+                    пекаря
+                  </p>
                   <p>Посадкові місця: відсутні</p>
                 </div>
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="/images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contacts-section">
@@ -158,7 +176,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="#">
@@ -174,37 +192,42 @@
         <address>
           <ul>
             <li>
-              <a class="addres-link" href="tel:+ 380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
+              <a class="addres-link" href="tel:+ 380960000007">
+                + 38 (096) 000 00 07
+              </a>
             </li>
             <li>
-              <a class="addres-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
+              <a class="addres-link" href="mailto:shopbakery@gmail.com">
+                shopbakery@gmail.com
+              </a>
             </li>
             <li>
               <a
                 class="addres-link"
                 href="https://maps.app.goo.gl/HqPunAuRTknZwevEA"
                 target="_blank"
-                >Україна, м. Київ, вул. Січових Стрільців 54
+              >
+                Україна, м. Київ, вул. Січових Стрільців 54
               </a>
             </li>
             <li>
               <a href="#">
-                <!-- facebook icon -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="/images/icons.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
-                <!-- insta icon -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="/images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
           </ul>
-          <a class="addres-link" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
+          <a class="addres-link" href="#" target="_blank">
+            Політика конфіденційності
+          </a>
           <p class="addres-copy">&copy; 2022 Дані захищені</p>
         </address>
       </div>
