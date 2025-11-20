@@ -502,7 +502,7 @@ ul {
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
-  padding: 20px o;
+  padding: 20px 0;
   transition: opacity 0.3s, visibility 0.3s;
 }
 
@@ -520,10 +520,68 @@ ul {
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  padding: 128px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* form */
+.form-field {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid rgba(161, 130, 104, 1);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: rgba(161, 130, 104, 1);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-style: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }
